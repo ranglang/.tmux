@@ -1,3 +1,9 @@
-image: dockerfile/nginx
-script:
-- echo hello world
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: dockerfile1
+  image: dockerfile/nginx
+  commands:
+    - echo hello world
