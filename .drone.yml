@@ -4,6 +4,6 @@ name: default
 
 steps:
 - name: dockerfile1
-  image: dockerfile/nginx
+  image: nginx
   commands:
     - echo hello world
